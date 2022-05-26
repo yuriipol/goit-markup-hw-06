@@ -947,6 +947,10 @@ body {
   display: block;
   width: 18px;
   height: 18px;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* End style button close */
 .button-close:hover .icon-close,
@@ -986,8 +990,13 @@ body {
 .input {
   width: 100%;
   height: 40px;
+  padding-left: 40px;
   margin-bottom: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .comment {
   width: 100%;
@@ -1015,6 +1024,10 @@ body {
   left: 55px;
   width: 18px;
   height: 18px;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-phone {
   position: absolute;
@@ -1022,6 +1035,10 @@ body {
   left: 55px;
   width: 18px;
   height: 18px;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-email {
   position: absolute;
@@ -1029,6 +1046,10 @@ body {
   left: 55px;
   width: 18px;
   height: 18px;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .user-name:hover .icon-person,
 .user-name:focus .icon-person {
@@ -1056,7 +1077,7 @@ body {
   margin-right: 8px;
 }
 .link-terms {
-  text-decoration: none;
+  margin: 0;
   text-align: center;
 
   font-weight: 400;

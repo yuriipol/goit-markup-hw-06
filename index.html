@@ -461,22 +461,24 @@
         </button>
         <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
         <form class="form">
+          <label for="user-name" class="label">Имя</label>
           <div class="user-name">
-            <label for="user-name" class="label">Имя</label>
             <input type="text" name="user-name" id="user-name" class="input" />
             <svg class="icon-person">
               <use href="./images/symbol-defs.svg#icon-person"></use>
             </svg>
           </div>
+
+          <label for="tel-number" class="label">Телефон</label>
           <div class="tel-namber">
-            <label for="tel-number" class="label">Телефон</label>
             <input type="tel" name="tel-number" id="tel-number" class="input" />
             <svg class="icon-phone">
               <use href="./images/symbol-defs.svg#icon-phone"></use>
             </svg>
           </div>
+
+          <label for="email" class="label">Почта</label>
           <div class="email">
-            <label for="email" class="label">Почта</label>
             <input type="email" name="email" id="email" class="input" />
             <svg class="icon-email">
               <use href="./images/symbol-defs.svg#icon-mail-icon"></use>
@@ -505,9 +507,9 @@
             <svg class="icon-checkbox">
               <use href="./images/symbol-defs.svg#icon-check"></use>
             </svg>
-            <a href="" class="link-terms"
-              >Соглашаюсь с рассылкой и принимаю <span class="terms">Условия договора</span>
-            </a>
+            <p class="link-terms">
+              Соглашаюсь с рассылкой и принимаю <a href="" class="terms">Условия договора</a>
+            </p>
           </div>
 
           <button type="submit" class="modal-button">Отправить</button>
