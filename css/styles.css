@@ -817,7 +817,9 @@ body {
   transform: translatey(0);
   opacity: 1;
 } */
+
 /* Style modal window */
+/* Create backdrop  */
 .backdrop {
   position: fixed;
   top: 0;
@@ -830,13 +832,20 @@ body {
   opacity: 1;
   transition: opacity 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+/* end create backdrop */
+
+/* Скрываем его через прозрачность и делаем доступ
+до страницы сайта  */
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
+/* Делаем трансформацию  */
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
 }
+/* создаем и позиционируем модалку к backdrop, центрируем
+и делаем трансформацию  */
 .modal {
   position: absolute;
   top: 50%;
@@ -845,12 +854,13 @@ body {
 
   width: 528px;
   height: 581px;
-  padding: 20px;
+  /* padding: 8px; */
   background-color: #fff;
   border-radius: 4px;
 
   transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+/* Style button close */
 .button-close {
   position: absolute;
   top: 8px;
@@ -872,4 +882,100 @@ body {
 .icon-close {
   width: 18px;
   height: 18px;
+}
+/* End style button close */
+
+/* Style form modal  */
+.modal-title {
+  margin-top: 40px;
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+/* Style form */
+.form {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.01em;
+
+  color: var(--title-text-color);
+}
+.input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+.comment {
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+
+  margin-bottom: 20px;
+}
+
+/* .input:hover,
+.input:focus {
+  border-color: var(--accent-color);
+} */
+/* Style условия договора */
+.checkbox-terms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.link-terms {
+  text-decoration: none;
+  text-align: center;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71px;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
+.terms {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+
+  color: #2196f3;
+}
+
+/* Style modal button отправить */
+.modal-button {
+  width: 200px;
+  height: 50px;
+  padding: 10px 55px;
+
+  margin: 0 auto;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88px;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  border: 1px solid transparent;
+
+  color: var(--button-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }

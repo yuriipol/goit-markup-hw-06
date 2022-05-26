@@ -434,6 +434,37 @@
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
+        <h1 class="modal-title">Оставьте свои данные, мы вам перезвоним</h1>
+        <form class="form">
+          <label for="user-name" class="label">Имя</label>
+          <input type="text" name="user-name" id="user-name" class="input" />
+
+          <label for="tel-number" class="label">Телефон</label>
+          <input type="tel" name="tel-number" id="tel-number" class="input" />
+
+          <label for="email" class="label">Почта</label>
+          <input type="email" name="email" id="email" class="input" />
+
+          <label for="comment" class="label">Комментарий</label>
+          <input type="text" name="comment" id="comment" class="input comment" />
+
+          <div class="checkbox-terms">
+            <label for="terms"></label>
+            <input
+              type="checkbox"
+              name="terms"
+              id="terms"
+              class="checkbox visually-hidden"
+              checked
+            />
+
+            <a href="" class="link-terms"
+              >Соглашаюсь с рассылкой и принимаю <span class="terms">Условия договора</span>
+            </a>
+          </div>
+
+          <button type="submit" class="modal-button">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/model.js"></script>
