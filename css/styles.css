@@ -1035,6 +1035,7 @@ body {
 .input:hover,
 .input:focus {
   border-color: var(--accent-color);
+  border-width: 1px;
 }
 
 .user-name,
@@ -1071,15 +1072,15 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .user-name:hover .icon-person,
-.user-name:focus .icon-person {
+.user-name:focus-within .icon-person {
   fill: var(--accent-color);
 }
 .tel-namber:hover .icon-phone,
-.tel-namber:focus .icon-phone {
+.tel-namber:focus-within .icon-phone {
   fill: var(--accent-color);
 }
 .email:hover .icon-email,
-.email:focus .icon-email {
+.email:focus-within .icon-email {
   fill: var(--accent-color);
 }
 /* Style условия договора */
