@@ -683,7 +683,7 @@ body {
 }
 .subscribe-input:hover,
 .subscribe-input:focus {
-  border-color: var(--accent-color);
+  border-color: var(--primary-white-color);
 }
 
 .subscribe-button {
