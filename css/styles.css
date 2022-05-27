@@ -1010,6 +1010,7 @@ body {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   cursor: pointer;
+  outline: none;
 
   transition-property: border-color;
   transition-duration: 250ms;
