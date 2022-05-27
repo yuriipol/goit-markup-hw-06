@@ -496,20 +496,15 @@
           ></textarea>
 
           <div class="checkbox-terms">
-            <label for="terms"></label>
-            <input
-              type="checkbox"
-              name="terms"
-              id="terms"
-              class="checkbox visually-hidden"
-              checked
-            />
-            <svg class="icon-checkbox">
-              <use href="./images/symbol-defs.svg#icon-check"></use>
-            </svg>
-            <p class="link-terms">
+            <label for="terms" class="link-terms">
+              <input type="checkbox" name="terms" id="terms" class="checkbox visually-hidden" />
+              <span class="fake">
+                <svg class="icon-checkbox" width="11" heigh="8">
+                  <use href="./images/symbol-defs.svg#icon-checkbox"></use>
+                </svg>
+              </span>
               Соглашаюсь с рассылкой и принимаю <a href="" class="terms">Условия договора</a>
-            </p>
+            </label>
           </div>
 
           <button type="submit" class="modal-button">Отправить</button>
