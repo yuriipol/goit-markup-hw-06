@@ -958,7 +958,12 @@ body {
   border-radius: 50%;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
   cursor: pointer;
+
+  /* transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .icon-close {
   display: block;
@@ -974,6 +979,10 @@ body {
 .button-close:focus .icon-close {
   fill: var(--accent-color);
 }
+/* .button-close:hover,
+.button-close:focus {
+  border-color: var(--accent-color);
+} */
 
 /* Style form modal  */
 
@@ -1034,7 +1043,6 @@ body {
 .input:hover,
 .input:focus {
   border-color: var(--accent-color);
-  border-width: 1px;
 }
 
 .user-name,
