@@ -1053,8 +1053,10 @@ body {
 }
 .icon-person {
   position: absolute;
-  top: 11px;
+  top: 50%;
   left: 12px;
+
+  transform: translateY(-50%);
 
   transition-property: fill;
   transition-duration: 250ms;
@@ -1062,8 +1064,10 @@ body {
 }
 .icon-phone {
   position: absolute;
-  top: 11px;
+  top: 50%;
   left: 12px;
+
+  transform: translateY(-50%);
 
   transition-property: fill;
   transition-duration: 250ms;
@@ -1071,8 +1075,10 @@ body {
 }
 .icon-email {
   position: absolute;
-  top: 11px;
+  top: 50%;
   left: 12px;
+
+  transform: translateY(-50%);
 
   transition-property: fill;
   transition-duration: 250ms;
