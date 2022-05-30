@@ -599,9 +599,7 @@ body {
 .logo-address {
   margin-right: 70px;
 }
-.social-links {
-  margin-right: 93px;
-}
+
 .social-icons {
   display: flex;
   align-items: baseline;
@@ -643,6 +641,9 @@ body {
 .links-social-icon:hover,
 .links-social-icon:focus {
   background-color: var(--accent-color);
+}
+.subscribe {
+  margin-left: auto;
 }
 .subscribe-form {
   display: flex;
@@ -688,11 +689,9 @@ body {
 .subscribe-button {
   display: flex;
   align-items: center;
-  width: 200px;
-  height: 50px;
+
   padding: 10px 28px;
 
-  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -1156,6 +1155,9 @@ body {
 /* .checkbox:checked + .fake .icon-checkbox {
   fill: red;
 } */
+.checkbox:focus + .fake {
+  outline-color: var(--accent-color);
+}
 .checkbox:checked + .fake {
   background-color: var(--accent-color);
   outline-color: var(--accent-color);
