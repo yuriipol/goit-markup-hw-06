@@ -1138,7 +1138,7 @@ body {
   color: var(--title-text-color);
 }
 .terms {
-  margin-left: 5px;
+  /* margin-left: 5px; */
 
   text-decoration: none;
   font-weight: 400;
